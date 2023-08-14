@@ -1,0 +1,21 @@
+.pointer{
+    cursor: pointer;
+}
+
+.overflow{
+    overflow: auto
+}
+
+.position-bottom{
+    position: fixed!important;
+    bottom: 0;
+    width: 100%;
+}
+
+.mb-15{
+    margin-bottom: 15rem;
+}
+
+.mt-4{
+    margin-top: 40rem!important;
+}
