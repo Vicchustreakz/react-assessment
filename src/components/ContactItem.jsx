@@ -23,6 +23,8 @@ const ContactItem = ({ contact, setContacts }) => {
         <td>{state}</td>
         <td>{country}</td>
         <td>{postal}</td>
+        {/* <td>{latitude}</td>
+        <td>{longitude}</td> */}
         <td>
             <div className="d-flex gap-3">
                 <span role='button' className='badge bg-success' onClick={() => navigate(`/edit-form/${id}`)}>

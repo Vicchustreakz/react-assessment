@@ -19,3 +19,9 @@
 .mt-4{
     margin-top: 40rem!important;
 }
+
+.highlighted-row {
+    background-color: #e0e0e0; /* or any other background color you prefer */
+    font-weight: bold;
+  }
+  

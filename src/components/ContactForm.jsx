@@ -19,7 +19,9 @@ const ContactForm = () => {
     city: "",
     state: "",
     country: "",
-    postal: "",
+    postal: ""
+    // latitude: "",
+    // longitude: ""
   });
 
   useEffect(() => {
@@ -37,7 +39,7 @@ const ContactForm = () => {
     setTimeout(() => {
       setShowAlert(false);
       navigate("/");
-    }, 800);
+    }, 2000);
   };
 
   return (
@@ -54,7 +56,10 @@ const ContactForm = () => {
         showAlert && (
           <div className="px-5">
             <div className="alert alert-success" role="alert">
-              Done. Added Successfully.
+              Done. Please wait...
+              <div className="spinner-border spinner-border-sm" role="status" style={{marginLeft:"15px"}}>
+                  <span className="sr-only"></span>
+              </div>
             </div>
           </div>
         )}
@@ -225,6 +230,42 @@ const ContactForm = () => {
                   />
                 </div>
               </div>
+
+              {/* <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div className="form-group">
+                  <label htmlFor="latitude" className="form-label mt-2">
+                    Latitude
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="latitude"
+                    name="latitude"
+                    value={inputValues.latitude}
+                    onChange={handleInputChange}
+                    placeholder="Enter Latitude"
+                    
+                  />
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div className="form-group">
+                  <label htmlFor="longitude" className="form-label mt-2">
+                    Latitude
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="longitude"
+                    name="longitude"
+                    value={inputValues.longitude}
+                    onChange={handleInputChange}
+                    placeholder="Enter longitude"
+                    
+                  />
+                </div>
+              </div> */}
 
               <div className="d-flex justify-content-center mt-5">
                 <button type="submit" className="btn btn-primary px-5">
